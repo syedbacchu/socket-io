@@ -1,19 +1,28 @@
 {
   "name": "socket-io",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "packageManager": "pnpm@10.34.5",
   "dependencies": {
     "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "socket.io": "^4.8.3",
-    "socket.io-client": "^4.8.3"
+    "dotenv": "^18.0.8",
+    "ioredis": "^6.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
